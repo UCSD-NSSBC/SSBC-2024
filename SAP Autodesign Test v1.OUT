@@ -1,0 +1,25 @@
+
+
+ SAP2000 v23.3.1 Ultimate 64-bit (Analysis Build 9871/64)                       
+ File: \\acsnfs4.ucsd.edu\Cifs...rod\GitHub\SSBC-2024\SAP Autodesign Test v1.OUT
+                                                                     
+                                                                       
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+       1 TO       9    A   A   A   A   A   A
+      10               A   A   -   A   A   A
+      11 TO      33    A   A   A   A   A   A
+      34               A   A   -   A   A   A
+      35 TO      36    A   A   A   A   A   A
+      37               -   -   -   A   A   A
+      38 TO      39    A   A   A   A   A   A
+     1-1               -   -   -   A   A   A
+     2-1 TO    39-1    A   A   A   A   A   A
