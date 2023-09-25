@@ -15,10 +15,15 @@
 
   JOINTS              UX  UY  UZ  RX  RY  RZ
        1               A   A   -   A   A   A
-       2 TO       9    A   A   A   A   A   A
-      10               A   A   -   A   A   A
-      11 TO      33    A   A   A   A   A   A
+       2 TO       8    A   A   A   A   A   A
+       9 TO      10    A   A   -   A   A   A
+      11               A   A   A   A   A   A
+      12               A   A   -   A   A   A
+      13 TO      29    A   A   A   A   A   A
+      30               A   A   -   A   A   A
+      33               A   A   A   A   A   A
       34               A   A   -   A   A   A
       35 TO      36    A   A   A   A   A   A
       37               -   -   -   A   A   A
-      38 TO      39    A   A   A   A   A   A
+      38               A   A   -   A   A   A
+      39               A   A   A   A   A   A
