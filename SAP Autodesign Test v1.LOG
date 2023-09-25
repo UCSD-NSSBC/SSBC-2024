@@ -1,23 +1,27 @@
 
 
- SAP2000 v23.3.1 Ultimate 64-bit (Analysis Build 9871/64)
+ SAP2000 v25.0.0 Ultimate 64-bit (Analysis Build 9939/64)
  File: \\acsnfs4.ucsd.edu\Cifs...rod\GitHub\SSBC-2024\SAP Autodesign Test v1.LOG
 
 
 
 
- B E G I N   A N A L Y S I S                                2023/09/17  19:15:34
+ B E G I N   A N A L Y S I S                                2023/09/25  09:48:17
 
 
  RUNNING ANALYSIS WITHIN THE GUI PROCESS
  USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
 
- NUMBER OF JOINTS                          =          68
+ NUMBER OF JOINTS                          =          34
     WITH RESTRAINTS                        =           4
- NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =         110
+ NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =          55
  NUMBER OF LOAD PATTERNS                   =           3
- NUMBER OF ACCELERATION LOADS              =           9
+ NUMBER OF ACCELERATION LOADS              =          12
  NUMBER OF LOAD CASES                      =           3
+ NUMBER OF MASS SOURCES                    =           1
+
+ UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = lb, in, °F, sec
+ GRAVITATIONAL ACCELERATION                =  386.088583
 
  ADDRESSABLE PHYSICAL MEMORY (RAM)         =      31.619 GB
 
@@ -32,16 +36,16 @@
  NUMBER OF THREADS: FORM (AUTOMATIC)       =           8
 
 
- E L E M E N T   F O R M A T I O N                                      19:15:34
+ E L E M E N T   F O R M A T I O N                                      09:48:17
 
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        19:15:34
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        09:48:17
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
- TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =         400
- NUMBER OF NON-ZERO STIFFNESS TERMS        =        5250
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =         198
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =        2589
 
  ---------------------------------
  BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
@@ -53,7 +57,7 @@
  ---------------------------------
 
 
- L I N E A R   S T A T I C   C A S E S                                  19:15:34
+ L I N E A R   S T A T I C   C A S E S                                  09:48:17
 
  USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -67,4 +71,4 @@
  CASE: LOAD CASE 2
 
 
- A N A L Y S I S   C O M P L E T E                          2023/09/17  19:15:34
+ A N A L Y S I S   C O M P L E T E                          2023/09/25  09:48:17

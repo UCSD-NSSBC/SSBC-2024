@@ -1,8 +1,6 @@
-  RespType: Displ    ,  File: .Y00   ,  Records:                     0
-                  9792
-  RespType: React    ,  File: .Y03   ,  Records:                     0
-                  9792
-  RespType: JFJoint  ,  File: .Y01   ,  Records:                     0
-                  9792
-  RespType: JFSpring ,  File: .Y02   ,  Records:                     0
-                  9792
+ SAPFire results-database version:           78
+ Type    Result      File                  Records
+ Resp    Displ       .Y00                        1                  4896
+ Resp    React       .Y03                        1                  4896
+ Resp    JFJoint     .Y01                        1                  4896
+ Resp    JFSpring    .Y02                        1                  4896
