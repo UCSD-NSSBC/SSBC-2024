@@ -6,15 +6,15 @@
 
 
 
- B E G I N   A N A L Y S I S                                2023/09/26  15:39:22
+ B E G I N   A N A L Y S I S                                2023/09/26  16:08:24
 
 
  RUNNING ANALYSIS WITHIN THE GUI PROCESS
  USING THE ADVANCED SOLVER (PROVIDES LIMITED INSTABILITY INFORMATION)
 
- NUMBER OF JOINTS                          =         138
+ NUMBER OF JOINTS                          =         148
     WITH RESTRAINTS                        =           4
- NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =         270
+ NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =         292
  NUMBER OF LOAD PATTERNS                   =           3
  NUMBER OF ACCELERATION LOADS              =          12
  NUMBER OF LOAD CASES                      =           1
@@ -36,16 +36,16 @@
  NUMBER OF THREADS: FORM (AUTOMATIC)       =           8
 
 
- E L E M E N T   F O R M A T I O N                                      15:39:22
+ E L E M E N T   F O R M A T I O N                                      16:08:24
 
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        15:39:22
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        16:08:24
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
- TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =         820
- NUMBER OF NON-ZERO STIFFNESS TERMS        =       12528
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =         880
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =       13530
 
  ---------------------------------
  BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
@@ -57,7 +57,7 @@
  ---------------------------------
 
 
- L I N E A R   S T A T I C   C A S E S                                  15:39:22
+ L I N E A R   S T A T I C   C A S E S                                  16:08:24
 
  USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -66,7 +66,7 @@
 
  LINEAR STATIC CASES TO BE SOLVED:
 
- CASE: VERTICAL LOAD CASE 4
+ CASE: LATERAL LOAD CASE 4
 
 
- A N A L Y S I S   C O M P L E T E                          2023/09/26  15:39:22
+ A N A L Y S I S   C O M P L E T E                          2023/09/26  16:08:24
