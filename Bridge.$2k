@@ -28,65 +28,23 @@ TABLE:  "AUTO COMBINATION OPTION DATA 01 - GENERAL"
    DesignType=Steel   AutoGen=Yes
  
 TABLE:  "AUTO COMBINATION OPTION DATA 02 - USER DATA"
-   DesignType=Steel   LSType=Strength   LCName="Load Case 5"
-   DesignType=Steel   LSType=Strength   LCName="Load Case 1"
-   DesignType=Steel   LSType=Strength   LCName="Load Case 2"
-   DesignType=Steel   LSType=Strength   LCName="Load Case 3"
-   DesignType=Steel   LSType=Strength   LCName="Load Case 4"
-   DesignType=Steel   LSType=Strength   LCName="Load Case 6"
-   DesignType=Steel   LSType=Strength   LCName="LC6 Grate/Preload"
-   DesignType=Steel   LSType=Strength   LCName="LC3 Grate/Preload"
-   DesignType=Steel   LSType=Strength   LCName="AVG Load Case"
-   DesignType=Steel   LSType=Deflection   LCName="Load Case 5"
-   DesignType=Steel   LSType=Deflection   LCName="Load Case 1"
-   DesignType=Steel   LSType=Deflection   LCName="Load Case 2"
-   DesignType=Steel   LSType=Deflection   LCName="Load Case 3"
-   DesignType=Steel   LSType=Deflection   LCName="Load Case 4"
-   DesignType=Steel   LSType=Deflection   LCName="Load Case 6"
-   DesignType=Steel   LSType=Deflection   LCName="LC6 Grate/Preload"
-   DesignType=Steel   LSType=Deflection   LCName="LC3 Grate/Preload"
-   DesignType=Steel   LSType=Deflection   LCName="AVG Load Case"
+   DesignType=Steel   LSType=Strength   LCName="Vertical Load Case 4"
+   DesignType=Steel   LSType=Strength   LCName="Lateral Load Case 4"
+   DesignType=Steel   LSType=Deflection   LCName="Vertical Load Case 4"
+   DesignType=Steel   LSType=Deflection   LCName="Lateral Load Case 4"
  
 TABLE:  "AUTO WAVE 3 - WAVE CHARACTERISTICS - GENERAL"
    WaveChar=Default   WaveType="From Theory"   KinFactor=1   SWaterDepth=1800   WaveHeight=720   WavePeriod=12   WaveTheory=Linear
  
-TABLE:  "CASE - BUCKLING 1 - GENERAL"
-   Case=Buckling   NumBuckMode=6   EigenTol=1E-09
- 
-TABLE:  "CASE - BUCKLING 2 - LOAD ASSIGNMENTS"
-   Case=Buckling   LoadType="Load pattern"   LoadName="Load Case 5"   LoadSF=1
- 
-TABLE:  "CASE - MODAL 1 - GENERAL"
-   Case=MODAL   ModeType=Eigen   MaxNumModes=12   MinNumModes=1   EigenShift=0   EigenCutoff=0   EigenTol=1E-09   AutoShift=Yes
- 
 TABLE:  "CASE - STATIC 1 - LOAD ASSIGNMENTS"
    Case=DEAD   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="Load Case 5"   LoadType="Load pattern"   LoadName="Load Case 5"   LoadSF=1
-   Case="Load Case 5"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="Load Case 1"   LoadType="Load pattern"   LoadName="Load Case 1"   LoadSF=1
-   Case="Load Case 1"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="Load Case 2"   LoadType="Load pattern"   LoadName="Load Case 2"   LoadSF=1
-   Case="Load Case 2"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="Load Case 3"   LoadType="Load pattern"   LoadName="Load Case 3"   LoadSF=1
-   Case="Load Case 3"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="Load Case 4"   LoadType="Load pattern"   LoadName="Load Case 4"   LoadSF=1
-   Case="Load Case 4"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="Load Case 6"   LoadType="Load pattern"   LoadName="Load Case 6"   LoadSF=1
-   Case="Load Case 6"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="LC 1 or 2 Lateral W-E"   LoadType="Load pattern"   LoadName="LC 1 or 2 Lateral W-E"   LoadSF=1
-   Case="LC 1 or 2 Lateral W-E"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="LC 3 or 5 Lateral W-E"   LoadType="Load pattern"   LoadName="LC 3 or 5 Lateral W-E"   LoadSF=1
-   Case="LC 3 or 5 Lateral W-E"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="LC 4 or 6 Lateral W-E"   LoadType="Load pattern"   LoadName="LC 4 or 6 Lateral W-E"   LoadSF=1
-   Case="LC 4 or 6 Lateral W-E"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="LC6 Grate/Preload"   LoadType="Load pattern"   LoadName="LC6 Grate/Preload"   LoadSF=1
-   Case="LC3 Grate/Preload"   LoadType="Load pattern"   LoadName="LC3 Grate/Preload"   LoadSF=1
-   Case="AVG Load Case"   LoadType="Load pattern"   LoadName="AVG Load Case"   LoadSF=1
-   Case="AVG Load Case"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
+   Case="Vertical Load Case 4"   LoadType="Load pattern"   LoadName="Vertical Load Case 4"   LoadSF=1
+   Case="Vertical Load Case 4"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
+   Case="Lateral Load Case 4"   LoadType="Load pattern"   LoadName="Lateral Load Case 4"   LoadSF=1
+   Case="Lateral Load Case 4"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
  
 TABLE:  "COMBINATION DEFINITIONS"
    ComboName="D+L (LC5)"   ComboType="Linear Add"   AutoDesign=No   CaseName=DEAD   ScaleFactor=1   SteelDesign=None   ConcDesign=None   AlumDesign=None   ColdDesign=None   GUID=453cb59f-7d63-47b1-b3c4-1e79e6d37335
-   ComboName="D+L (LC5)"   CaseName="Load Case 5"   ScaleFactor=1
  
 TABLE:  "CONNECTIVITY - FRAME"
    Frame=77   JointI=77   JointJ=78   IsCurved=No   GUID=460bc359-3bda-4b1a-befd-9c0728c30ff4
@@ -548,18 +506,17 @@ TABLE:  "FRAME DESIGN PROCEDURES"
    Frame=228   DesignProc="From Material"
  
 TABLE:  "FRAME LOADS - DISTRIBUTED"
-   Frame=93   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.605263157894737   RelDistB=0.657894736842105   AbsDistA=138   AbsDistB=150   FOverLA=-131.25   FOverLB=-131.25   GUID=d13d6b1d-2169-4908-a2b6-f636c9292bb4
-   Frame=93   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.657894736842105   RelDistB=0.710526315789474   AbsDistA=150   AbsDistB=162   FOverLA=-131.25   FOverLB=-131.25   GUID=dec0c971-ff9d-485a-97ef-7eca769bf64c
-   Frame=93   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.710526315789474   RelDistB=0.763157894736842   AbsDistA=162   AbsDistB=174   FOverLA=-131.25   FOverLB=-131.25   GUID=12da19c3-17ac-4549-ad6f-3be7257723eb
-   Frame=93   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.394736842105263   RelDistB=0.447368421052632   AbsDistA=90   AbsDistB=102   FOverLA=-193.75   FOverLB=-193.75   GUID=b94ce9d1-0343-4baa-8ee8-d267f9d4ff17
-   Frame=93   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.447368421052632   RelDistB=0.5   AbsDistA=102   AbsDistB=114   FOverLA=-193.75   FOverLB=-193.75   GUID=bf0f01b0-486c-4cb3-b824-f3673d5aec36
-   Frame=93   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.5   RelDistB=0.552631578947368   AbsDistA=114   AbsDistB=126   FOverLA=-193.75   FOverLB=-193.75   GUID=9c12aeea-4c89-4efe-b726-d3236e186d68
-   Frame=161   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.605263157894737   RelDistB=0.657894736842105   AbsDistA=138   AbsDistB=150   FOverLA=-131.25   FOverLB=-131.25   GUID=6c03d9f5-7113-4fae-8739-12ed01b46570
-   Frame=161   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.657894736842105   RelDistB=0.710526315789474   AbsDistA=150   AbsDistB=162   FOverLA=-131.25   FOverLB=-131.25   GUID=4dc71f47-a629-4700-916c-d1b4e69abd47
-   Frame=161   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.710526315789474   RelDistB=0.763157894736842   AbsDistA=162   AbsDistB=174   FOverLA=-131.25   FOverLB=-131.25   GUID=22146a56-3bd5-48ea-877e-2b1a1babb2e3
-   Frame=161   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.394736842105263   RelDistB=0.447368421052632   AbsDistA=90   AbsDistB=102   FOverLA=-193.75   FOverLB=-193.75   GUID=6ca5ef7c-8866-4836-909f-828bf6c259a8
-   Frame=161   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.447368421052632   RelDistB=0.5   AbsDistA=102   AbsDistB=114   FOverLA=-193.75   FOverLB=-193.75   GUID=070e0c55-6984-4175-acb5-a9201c48f72d
-   Frame=161   LoadPat="Load Case 1"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.5   RelDistB=0.552631578947368   AbsDistA=114   AbsDistB=126   FOverLA=-193.75   FOverLB=-193.75   GUID=7f5850af-91da-42aa-ae61-6cf137bb6f20
+   Frame=93   LoadPat="Lateral Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.421052631578947   RelDistB=0.631578947368421   AbsDistA=96   AbsDistB=144   FOverLA=-1.04   FOverLB=-1.04   GUID=3b868ad8-a570-4bd7-baac-836d460fd211
+   Frame=93   LoadPat="Vertical Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.394736842105263   RelDistB=0.552631578947368   AbsDistA=90   AbsDistB=126   FOverLA=-21.53   FOverLB=-21.53   GUID=d90bccd8-16b9-4cdd-90b7-f0b870ead58a
+   Frame=93   LoadPat="Vertical Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.605263157894737   RelDistB=0.763157894736842   AbsDistA=138   AbsDistB=174   FOverLA=-14.5833333333333   FOverLB=-14.58   GUID=ffe8ebe7-5d90-4ef1-a92b-1e75fb7cafeb
+   Frame=93   LoadPat="Vertical Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.605263157894737   RelDistB=0.763157894736842   AbsDistA=138   AbsDistB=174   FOverLA=-14.5833333333333   FOverLB=-14.58   GUID=f7f83146-6920-4983-adb7-e7d85d95819b
+   Frame=93   LoadPat="Vertical Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.394736842105263   RelDistB=0.552631578947368   AbsDistA=90   AbsDistB=126   FOverLA=-21.5277777777778   FOverLB=-21.53   GUID=f140580e-1df0-48de-9e9b-5baccab7708d
+   Frame=161   LoadPat="Lateral Load Case 4"   CoordSys=GLOBAL   Type=Force   Dir=Y   DistType=RelDist   RelDistA=0.421052631578947   RelDistB=0.631578947368421   AbsDistA=96   AbsDistB=144   FOverLA=-1.39   FOverLB=-1.39   GUID=4bc257b6-53a4-4e37-8ee7-828a1f310f44
+   Frame=161   LoadPat="Lateral Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.421052631578947   RelDistB=0.631578947368421   AbsDistA=96   AbsDistB=144   FOverLA=-1.04   FOverLB=-1.04   GUID=697434ec-dba7-40c0-87b1-71da7021c306
+   Frame=161   LoadPat="Vertical Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.394736842105263   RelDistB=0.552631578947368   AbsDistA=90   AbsDistB=126   FOverLA=-21.53   FOverLB=-21.53   GUID=a488aef9-8433-45fe-b009-e92a6929c057
+   Frame=161   LoadPat="Vertical Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.605263157894737   RelDistB=0.763157894736842   AbsDistA=138   AbsDistB=174   FOverLA=-14.5833333333333   FOverLB=-14.58   GUID=ff6440a5-ebf2-4574-b8f0-1596c8025fd9
+   Frame=161   LoadPat="Vertical Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.605263157894737   RelDistB=0.763157894736842   AbsDistA=138   AbsDistB=174   FOverLA=-14.5833333333333   FOverLB=-14.58   GUID=da6ae798-e4a7-4a51-b0fd-e6f9f5cb4b23
+   Frame=161   LoadPat="Vertical Load Case 4"   CoordSys=CSYS4   Type=Force   Dir=Z   DistType=RelDist   RelDistA=0.394736842105263   RelDistB=0.552631578947368   AbsDistA=90   AbsDistB=126   FOverLA=-21.5277777777778   FOverLB=-21.53   GUID=311502f9-c8d2-4b2b-9c46-5e90cef7f895
  
 TABLE:  "FRAME LOAD TRANSFER OPTIONS"
    Frame=77   Transfer=Yes
@@ -2184,35 +2141,13 @@ TABLE:  "JOINT RESTRAINT ASSIGNMENTS"
  
 TABLE:  "LOAD CASE DEFINITIONS"
    Case=DEAD   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct=Non-Composite   AutoType=None   RunCase=No   GUID=4c5904b0-d019-4ec7-9419-0b936fd5070e
-   Case=MODAL   Type=LinModal   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct=Other   AutoType=None   RunCase=No   GUID=bb3e0a88-b477-49eb-a21f-3ac746530277
-   Case="Load Case 5"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=184c2c68-c831-4403-841e-6479b2d57e9e
-   Case="Load Case 1"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=Yes   GUID=a11ab8ca-abaf-49b8-9669-8b80ba54aa86
-   Case="Load Case 2"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=0b3aa555-9421-4296-a821-3fe408eba438
-   Case="Load Case 3"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=a5a74dc2-3787-4c24-a3b4-609d024c8159
-   Case="Load Case 4"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=eeb26d38-33be-4fa9-afc6-5608e714094e
-   Case="Load Case 6"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=e78e9ed7-4942-4797-a7bc-97b5ea3488bd
-   Case="LC 1 or 2 Lateral W-E"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=006a235a-86d4-448f-ad75-8dc8568c5fb6
-   Case=Buckling   Type=LinBuckling   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Live   DesActOpt="Prog Det"   DesignAct=Other   AutoType=None   RunCase=No   GUID=8da8eab7-9834-4710-ae48-a3674115535e
-   Case="LC 3 or 5 Lateral W-E"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=af807a3a-0ede-4eb0-986e-52812c8fe480
-   Case="LC 4 or 6 Lateral W-E"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=19329cc7-97d1-4832-a65e-619984b83b23
-   Case="LC6 Grate/Preload"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Live   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=7ad40465-faa4-4b92-ba79-5f36658d680f
-   Case="LC3 Grate/Preload"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Live   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=f2a7a902-e2f5-423e-a4c7-d4935b384995
-   Case="AVG Load Case"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=bc4bc8a3-21df-481e-ac08-ef088160f820
+   Case="Vertical Load Case 4"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=Yes   GUID=a11ab8ca-abaf-49b8-9669-8b80ba54aa86
+   Case="Lateral Load Case 4"   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=3779389f-7b6f-42ef-b0a2-dac76268a773
  
 TABLE:  "LOAD PATTERN DEFINITIONS"
    LoadPat=DEAD   DesignType=Dead   SelfWtMult=1   GUID=2e9047ad-1411-4551-a3a2-6ee414e2cc21
-   LoadPat="Load Case 5"   DesignType=Live   SelfWtMult=0   GUID=4601fab0-9f6f-4c8a-b164-964e2e57cd5b   Notes="Added 10/14/2022 10:52:56 PM"
-   LoadPat="Load Case 1"   DesignType=Live   SelfWtMult=0   GUID=e81d754b-5183-4940-8199-02ea159f1f8c   Notes="Added 11/9/2022 8:23:09 PM"
-   LoadPat="Load Case 2"   DesignType=Live   SelfWtMult=0   GUID=87899fd8-c945-4b38-8b5f-4c71761c37f4   Notes="Added 11/9/2022 8:23:12 PM"
-   LoadPat="Load Case 3"   DesignType=Live   SelfWtMult=0   GUID=6b37dfb8-262d-4dcd-9f0a-506e8c064d28   Notes="Added 11/9/2022 8:23:15 PM"
-   LoadPat="Load Case 4"   DesignType=Live   SelfWtMult=0   GUID=0201cc14-f918-40e2-ac0f-61d1601e5563   Notes="Added 11/9/2022 8:23:18 PM"
-   LoadPat="Load Case 6"   DesignType=Live   SelfWtMult=0   GUID=63f97272-0aa8-4a4d-acce-6a573060138c   Notes="Added 11/9/2022 8:58:19 PM"
-   LoadPat="LC 1 or 2 Lateral W-E"   DesignType=Live   SelfWtMult=0   GUID=9f4b68e5-0880-4851-a662-c75c7a63e26f   Notes="Added 11/11/2022 11:47:10 PM"
-   LoadPat="LC 3 or 5 Lateral W-E"   DesignType=Live   SelfWtMult=0   GUID=81ac5715-6415-42f7-a0c0-067af611c8fb   Notes="Added 11/20/2022 12:10:12 AM"
-   LoadPat="LC 4 or 6 Lateral W-E"   DesignType=Live   SelfWtMult=0   GUID=af904afa-5f4d-4e65-8bf1-41df177dcafe   Notes="Added 11/20/2022 12:10:16 AM"
-   LoadPat="LC6 Grate/Preload"   DesignType=Live   SelfWtMult=0   GUID=c95faf7d-8f69-4e63-879e-e724d8f634d7   Notes="Added 12/12/2022 6:47:47 PM"
-   LoadPat="LC3 Grate/Preload"   DesignType=Live   SelfWtMult=0   GUID=97976381-91e2-484f-b512-e3c3c11ca369   Notes="Added 12/12/2022 7:00:59 PM"
-   LoadPat="AVG Load Case"   DesignType=Live   SelfWtMult=0   GUID=e549e17e-8f37-46b9-a733-e9987beb2e0a   Notes="Added 12/13/2022 7:09:18 PM"
+   LoadPat="Vertical Load Case 4"   DesignType=Live   SelfWtMult=0   GUID=e81d754b-5183-4940-8199-02ea159f1f8c   Notes="Added 11/9/2022 8:23:09 PM"
+   LoadPat="Lateral Load Case 4"   DesignType=Live   SelfWtMult=0   GUID=3ca9a843-ea4a-4d47-a849-0d6d6edeed78   Notes="Added 9/26/2023 3:18:37 PM"
  
 TABLE:  "MASS SOURCE"
    MassSource=MSSSRC1   Elements=Yes   Masses=Yes   Loads=No   IsDefault=Yes
