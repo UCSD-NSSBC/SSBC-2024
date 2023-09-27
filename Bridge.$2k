@@ -38,7 +38,7 @@ TABLE:  "AUTO WAVE 3 - WAVE CHARACTERISTICS - GENERAL"
  
 TABLE:  "CASE - STATIC 1 - LOAD ASSIGNMENTS"
    Case=DEAD   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
-   Case="Vertical Load Case 4"   LoadType="Load pattern"   LoadName="Vertical Load Case 4"   LoadSF=1
+   Case="Vertical Load Case 4"   LoadType="Load pattern"   LoadName="Vertical Load Case 4"   LoadSF=0.5
    Case="Vertical Load Case 4"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
    Case="Lateral Load Case 4"   LoadType="Load pattern"   LoadName="Lateral Load Case 4"   LoadSF=1
    Case="Lateral Load Case 4"   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
