@@ -6,7 +6,7 @@
 
 
 
- B E G I N   A N A L Y S I S                                2023/09/27  21:05:13
+ B E G I N   A N A L Y S I S                                2023/09/28  11:46:14
 
 
  RUNNING ANALYSIS WITHIN THE GUI PROCESS
@@ -15,7 +15,7 @@
  NUMBER OF JOINTS                          =         148
     WITH RESTRAINTS                        =           4
  NUMBER OF FRAME/CABLE/TENDON ELEMENTS     =         292
- NUMBER OF LOAD PATTERNS                   =           3
+ NUMBER OF LOAD PATTERNS                   =          10
  NUMBER OF ACCELERATION LOADS              =          12
  NUMBER OF LOAD CASES                      =           1
  NUMBER OF MASS SOURCES                    =           1
@@ -36,11 +36,11 @@
  NUMBER OF THREADS: FORM (AUTOMATIC)       =           8
 
 
- E L E M E N T   F O R M A T I O N                                      21:05:13
+ E L E M E N T   F O R M A T I O N                                      11:46:14
 
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        21:05:13
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        11:46:14
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -57,7 +57,7 @@
  ---------------------------------
 
 
- L I N E A R   S T A T I C   C A S E S                                  21:05:13
+ L I N E A R   S T A T I C   C A S E S                                  11:46:14
 
  USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -66,7 +66,7 @@
 
  LINEAR STATIC CASES TO BE SOLVED:
 
- CASE: LATERAL LOAD CASE 4
+ CASE: VERTICAL LOAD CASE 6
 
 
- A N A L Y S I S   C O M P L E T E                          2023/09/27  21:05:13
+ A N A L Y S I S   C O M P L E T E                          2023/09/28  11:46:14
