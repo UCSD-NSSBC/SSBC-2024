@@ -16,9 +16,9 @@
   JOINTS              UX  UY  UZ  RX  RY  RZ
       77               -   -   -   A   A   A
       78 TO      82    A   A   A   A   A   A
-      83               A   A   -   A   A   A
+      83               A   -   -   A   A   A
       84 TO     143    A   A   A   A   A   A
      144               -   -   -   A   A   A
      145 TO     157    A   A   A   A   A   A
-     158               A   A   -   A   A   A
+     158               A   -   -   A   A   A
      161 TO       8    A   A   A   A   A   A

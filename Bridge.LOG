@@ -6,7 +6,7 @@
 
 
 
- B E G I N   A N A L Y S I S                                2023/09/28  19:37:49
+ B E G I N   A N A L Y S I S                                2023/09/29  19:03:00
 
 
  RUNNING ANALYSIS WITHIN THE GUI PROCESS
@@ -36,16 +36,16 @@
  NUMBER OF THREADS: FORM (AUTOMATIC)       =           8
 
 
- E L E M E N T   F O R M A T I O N                                      19:37:49
+ E L E M E N T   F O R M A T I O N                                      19:03:00
 
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        19:37:49
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        19:03:00
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
- TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =         844
- NUMBER OF NON-ZERO STIFFNESS TERMS        =       12828
+ TOTAL NUMBER OF EQUILIBRIUM EQUATIONS     =         842
+ NUMBER OF NON-ZERO STIFFNESS TERMS        =       12806
 
  ---------------------------------
  BASIC STABILITY CHECK FOR LINEAR LOAD CASES:
@@ -57,7 +57,7 @@
  ---------------------------------
 
 
- L I N E A R   S T A T I C   C A S E S                                  19:37:49
+ L I N E A R   S T A T I C   C A S E S                                  19:03:00
 
  USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -66,7 +66,7 @@
 
  LINEAR STATIC CASES TO BE SOLVED:
 
- CASE: LATERAL LOAD CASE 2, 3, 4
+ CASE: VERTICAL LOAD CASE 4
 
 
- A N A L Y S I S   C O M P L E T E                          2023/09/28  19:37:49
+ A N A L Y S I S   C O M P L E T E                          2023/09/29  19:03:00
